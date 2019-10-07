@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    background-color:rgb(235, 230, 228);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+   }
+  
+h1{  
+    
+    color: rgb(12, 12, 12);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+
+}
+
+article{
+  background-color: rgb(252, 249, 249);
+  border:1px solid rgb(253, 251, 251);
+  margin-bottom: 20px;
+  padding: 40px; 
+  border-radius: 10px;
+  
+  
+}
+section{
+  background-color: #df9999;
+  border:1px solid rgb(177, 170, 170);
+  margin-bottom: 20px;
+  padding: 10px 20px; 
+  border-radius: 10px;  
+
+}
+.navegacion{
+  background: #c0bdbc;
+ width: 1000px;
+ margin: 30px auto;
+
+}
+.navegacion ul{
+  list-style: none;
+}
+.menu > li{
+  position: relative;
+  display: inline-block;
+}
+.menu > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: rgb(131, 29, 29);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.menu li a:hover{
+  color: #c4bdbd;
+  transition: all .3s;
+}
+.submenu{
+  position: absolute;
+  background:  #926565;
+  width: 130px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+   
+}
+.submenu li a{
+  display: block;
+  padding: 15px;
+  color: rgb(12, 12, 12);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+
+}
+.menu li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+
+}
